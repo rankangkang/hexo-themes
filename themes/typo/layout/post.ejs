@@ -1,0 +1,14 @@
+<div class="post-main">
+  <% if (is_post()) { %>
+  <div class="post-main-title"><%= page.title %></div>
+  <div class="post-meta"><%- date(page.date, "YYYY MMMM Do") %></div>
+  <!-- TODO: 增加 tag -->
+  <div class="post-content"><%- page.content %></div>
+  <% } else { %>
+
+  <div class="post-content"><%- page.content %></div>
+
+  <% } %>
+</div>
+
+<%- js('js/highlight.js') %>
