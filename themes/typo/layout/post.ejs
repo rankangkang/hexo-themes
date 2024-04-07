@@ -1,14 +1,18 @@
-<div class="post-main">
+<article class="post">
   <% if (is_post()) { %>
-  <div class="post-main-title"><%= page.title %></div>
-  <div class="post-meta"><%- date(page.date, "YYYY MMMM Do") %></div>
-  <!-- TODO: 增加 tag -->
-  <div class="post-content"><%- page.content %></div>
-  <% } else { %>
-
-  <div class="post-content"><%- page.content %></div>
-
+  <div class="post-title"><%= page.title %></div>
+  <div class="post-meta">
+    <div class="date"><%- date(page.date, "YYYY MMMM Do") %></div>
+    <div class="tags">
+      <% page.tags.map(tag => tag.name).forEach(function (tag) { %>
+      <div class="tag-item"><%- tag %></div>
+      <% }) %>
+    </div>
+  </div>
   <% } %>
-</div>
+
+  <main class="post-content"><%- page.content %></main>
+
+</article>
 
 <%- js('js/highlight.js') %>

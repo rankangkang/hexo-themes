@@ -7,7 +7,7 @@ icon: /icon.svg
 
 # main menu navigation
 menu:
-  home: /
+  archives: /archives
   about: /about
 
 copyright: 2024 typo

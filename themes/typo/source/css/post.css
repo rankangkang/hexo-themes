@@ -1,5 +1,31 @@
+.post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.post-title {
+  flex: 0 0 100%;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--font-color);
+}
+
+.post-meta {
+  font-size: 0.875rem;
+  color: var(--font-color-extra);
+  flex: 0 0 100%;
+  margin-bottom: 32px;
+}
+
 .post-content {
   width: 100%;
+  color: #333333;
 }
 
 .post-content .octicon {
@@ -25,9 +51,10 @@
 .post-content h4::before,
 .post-content h5::before,
 .post-content h6::before {
-  content: "#";
+  content: "⌗";
   padding-right: 10px;
   color: #51525d;
+  font-weight: 600;
 }
 
 .post-content h1 .octicon-link,
@@ -266,7 +293,7 @@
 }
 
 .post-content a {
-  color: #0366d6;
+  color: var(--color-link);
   text-decoration: none;
 }
 
@@ -395,8 +422,8 @@
 
 .post-content code,
 .post-content pre {
-  font-family:  JetBrainsMono, SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
-    monospace;
+  font-family: JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, Menlo,
+    Courier, monospace;
   font-size: 14px;
 }
 
@@ -535,7 +562,7 @@
 }
 
 .post-content hr {
-  background-color: #6a7380;
+  background-color: var(--color-hr);
   border: 0;
   height: 1px;
   margin: 24px 0;
@@ -543,10 +570,10 @@
 }
 
 .post-content blockquote {
-  border-left: 0.25em solid #798ba9;
-  color: #798ba9;
+  border-left: 0.25em solid var(--font-color-refer);
+  color: var(--font-color-refer);
   padding: 0 1em;
-  margin-left: 1em;
+  /* margin-left: 1em; */
 }
 
 .post-content blockquote > :first-child {
@@ -950,7 +977,7 @@
   margin-right: 12px;
 }
 
-.hljs>table {
+.hljs > table {
   margin-bottom: 0;
 }
 

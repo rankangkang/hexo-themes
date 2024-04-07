@@ -1,14 +1,13 @@
 @charset "utf-8";
 
 :root {
-  --font-color-0: #04077e;
-  --font-color-1: #000;
-  --font-color-2: #666;
-  --font-color-3: #aaa;
-  --bg-color-1: #eee;
-  --line-1: #ccc;
-  --line-2: #ddd;
+  --font-color: #000;
+  --font-color-secondary: #666;
+  --font-color-extra: #aaa;
+  --font-color-refer: #1c2032;
 
+  --color-hr: #ddd;
+  --color-link: #0366d6;
   --main-width: 1080px;
 }
 
