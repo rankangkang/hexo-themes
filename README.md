@@ -1,3 +1,3 @@
 # hexo-themes
 
-- [ ] hexo-theme-typora：typo-like theme
+- [ ] hexo-theme-typo：typo-like theme

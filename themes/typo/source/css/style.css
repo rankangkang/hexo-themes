@@ -6,7 +6,7 @@ body {
   line-height: 1.75;
   letter-spacing: 0.6px;
   color: var(--font-color-secondary);
-  background: #fff;
+  background: var(--color-background);
 }
 
 .header, .footer, .main {
@@ -14,8 +14,7 @@ body {
   max-width: var(--main-width);
   margin: 0 auto;
   padding: 72px 8vw 24px;
-  background: #fff;
-  background: #fff;
+  background: var(--color-background);
   overflow-x: hidden;
 }
 
@@ -61,13 +60,14 @@ body {
 
 .nav li a {
   color: var(--font-color);
-  opacity: 0.9;
-  transition: opacity ease-in-out 0.5s;
+  /* opacity: 0.9;
+  transition: opacity ease-in-out 0.5s; */
 }
 
 .nav li a:hover {
-  opacity: 1;
-  transition: opacity ease-in-out 0.5s;
+  text-decoration: underline;
+  /* opacity: 1;
+  transition: opacity ease-in-out 0.5s; */
 }
 
 p {
@@ -204,16 +204,17 @@ a {
 }
 
 .archive-item:nth-child(odd) {
-  background: #fafafa;
+  background: var(--color-list-item-odd);
 }
 
 .archive-item:nth-child(even) {
-  background: #fff;
+  background: var(--color-list-item-even);
 }
 
 .archive-item span {
   width: 108px;
   color: var(--font-color-secondary);
+  line-height: 100%;
 }
 
 .archive-item>.title {
@@ -242,14 +243,16 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: #eeeeee;
+  /* color: #eeeeee; */
+  color: var(--font-color-secondary);
 }
 
 .paginator * {
   display: block;
   padding: 8px 16px;
-  background: #fff;
-  border-bottom: 2px solid #eeeeee;
+  /* background: var(--color-background); */
+  /* border-bottom: 2px solid #eeeeee; */
+  border-bottom: 2px solid var(--color-unactive);
   /* border-radius: 1em; */
 }
 
@@ -267,7 +270,7 @@ a {
 
 .paginator a:hover {
   color: var(--font-color);
-  border-bottom: 2px solid var(--font-color);
+  border-bottom: 2px solid var(--color-active);
   transition: all ease-in-out 0.5s;
 }
 
