@@ -47,8 +47,6 @@ importers:
 
   themes/typo: {}
 
-  themes/typora: {}
-
 packages:
 
   /@adobe/css-tools@4.3.3:
