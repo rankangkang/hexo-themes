@@ -6,8 +6,9 @@
     "version": "7.1.1"
   },
   "scripts": {
-    "preinstall": "git submodule update --init --recursive",
-    "start": "hexo clean && hexo g && hexo s"
+    "preinstall": "git submodule update --init --remote --recursive",
+    "start": "hexo clean && hexo g && hexo s",
+    "deploy": "hexo clean && hexo g -d"
   },
   "dependencies": {
     "hexo": "^7.0.0",
@@ -17,10 +18,10 @@
     "hexo-generator-index": "^3.0.0",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-jade": "^0.5.0",
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-tag-embed": "latest"
+    "hexo-tag-embed": "latest",
+    "hexo-deployer-git": "^3.0.0"
   }
 }
