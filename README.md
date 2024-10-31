@@ -1,8 +1,18 @@
-# hexo-themes
+# hexo-themes | 👉🏻 [en](./README.en.md)
 
 项目使用 git submodule 管理主题。
 
 - [x] hexo-theme-typo：a simle theme named typo for hexo.
+
+## Quick start
+
+```bash
+pnpm i
+
+pnpm start
+
+pnpm deploy # if you want to
+```
 
 ## 开发备忘
 
