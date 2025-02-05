@@ -45,6 +45,8 @@ importers:
         specifier: latest
         version: 1.0.0
 
+  themes/typo: {}
+
 packages:
 
   /@adobe/css-tools@4.3.3:
